@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urugamba Arts - Preserving Rwandan Cultural Heritage</title>
+    <meta name="description" content="Preserving traditional Rwandan art forms through digital archiving and community workshops">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#006A4E", // Rwandan green
+                        secondary: "#FCD116", // Rwandan yellow
+                        accent: "#C8102E" // Rwandan red
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1600/900?random=1');
+            background-size: cover;
+            background-position: center;
+        }
+        .art-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">
+                    <span class="text-accent">Urugamba</span> Arts
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-primary hover:text-accent font-medium">Home</a>
+                    <a href="#problem" class="text-gray-600 hover:text-accent font-medium">The Problem</a>
+                    <a href="#solution" class="text-gray-600 hover:text-accent font-medium">Our Solution</a>
+                    <a href="#prototype" class="text-gray-600 hover:text-accent font-medium">Prototype</a>
+                    <a href="#future" class="text-gray-600 hover:text-accent font-medium">Future Plans</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl text-primary"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Preserving Rwanda's Cultural Heritage</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Digitally archiving traditional art forms while empowering rural communities through sustainable income opportunities</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#problem" class="bg-accent hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Learn More</a>
+                <a href="#solution" class="bg-secondary hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300">Our Solution</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section id="problem" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">The Disappearing Art Forms of Rwanda</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Vanishing Traditions</h3>
+                    <p class="text-lg mb-6">Traditional Rwandan art forms like Imigongo paintings and Intore dance are disappearing rapidly, especially in rural districts (Huye, Musanze, and Nyagatare) due to modernization, lack of documentation, and youth disengagement.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h4 class="text-xl font-semibold mb-3 text-primary">Key Challenges</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-circle text-accent mt-1 mr-2"></i>
+                                <span>Oral transmission of knowledge with elder practitioners passing away</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-circle text-accent mt-1 mr-2"></i>
+                                <span>Urban migration and globalization accelerating the decline</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-exclamation-circle text-accent mt-1 mr-2"></i>
+                                <span>Lost potential for cultural tourism ($620M industry in 2023)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/600/400?random=2" alt="Traditional Rwandan art forms at risk" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Our Hybrid Preservation Model</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Digital and physical preservation model" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Digital-Physical Hub</h3>
+                    <p class="text-lg mb-6">We combine an online archive of endangered art with mobile workshops co-created with local artisans to preserve Rwandan cultural heritage while creating economic opportunities.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-archive text-accent text-2xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">Digital Archive</h4>
+                            <p class="text-sm">Comprehensive documentation of 5 traditional art forms</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-users text-accent text-2xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">Community Workshops</h4>
+                            <p class="text-sm">Mobile training programs in rural districts</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-laptop-code text-accent text-2xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">Youth Training</h4>
+                            <p class="text-sm">Digital storytelling and e-commerce skills</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-hand-holding-usd text-accent text-2xl mb-2"></i>
+                            <h4 class="font-semibold mb-1">Income Generation</h4>
+                            <p class="text-sm">Monetization through cultural tourism and online sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-secondary bg-opacity-20 p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-center text-primary">Project Goals by December 2026</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-accent mb-2">5+</div>
+                        <div class="font-medium">Art Forms Preserved</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-accent mb-2">100+</div>
+                        <div class="font-medium">Youth Trained</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-4xl font-bold text-accent mb-2">3</div>
+                        <div class="font-medium">Rural Districts Reached</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section id="prototype" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Our Prototype Journey</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-accent">Initial Diagrams</h3>
+                    <img src="https://picsum.photos/600/400?random=4" alt="Initial prototype diagrams" class="rounded-lg mb-4 w-full">
+                    <p>Our early designs for the digital archive interface and mobile workshop curriculum framework, developed in collaboration with local artisans.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-accent">Development Milestones</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Community Needs Assessment</h4>
+                                <p class="text-sm text-gray-600">Completed Q1 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Pilot Workshop in Huye</h4>
+                                <p class="text-sm text-gray-600">Completed Q3 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-20 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <span class="text-primary text-xs font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Digital Platform Beta</h4>
+                                <p class="text-sm text-gray-600">Target Q2 2024</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-20 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <span class="text-primary text-xs font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Full District Rollout</h4>
+                                <p class="text-sm text-gray-600">Target Q4 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-primary text-white p-8 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-center">Featured Art Forms</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg art-card transition duration-300">
+                        <div class="text-secondary text-3xl mb-3">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Imigongo</h4>
+                        <p class="text-white text-opacity-80">Traditional cow dung paintings with geometric patterns</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg art-card transition duration-300">
+                        <div class="text-secondary text-3xl mb-3">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Intore Dance</h4>
+                        <p class="text-white text-opacity-80">Warrior dance with intricate movements and drumming</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg art-card transition duration-300">
+                        <div class="text-secondary text-3xl mb-3">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Agaseke</h4>
+                        <p class="text-white text-opacity-80">Traditional basket weaving with symbolic patterns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection and Future Plans -->
+    <section id="future" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Reflections & Future Vision</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Challenges & Lessons</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Intergenerational Knowledge Transfer</h4>
+                                <p class="text-gray-600">We learned that documenting oral traditions requires deep community trust and innovative recording methods.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Technology Adoption</h4>
+                                <p class="text-gray-600">Rural youth showed great enthusiasm for digital tools when connected to cultural preservation.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Sustainable Models</h4>
+                                <p class="text-gray-600">Combining preservation with income generation proved essential for long-term engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">Future Goals</h3>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="relative">
+                            <div class="absolute h-full w-1 bg-accent left-0 top-0"></div>
+                            <div class="ml-6 space-y-8">
+                                <div>
+                                    <h4 class="font-semibold text-lg">2024 Expansion</h4>
+                                    <p class="text-gray-600">Launch digital platform beta and expand workshops to Musanze district</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">2025 Scaling</h4>
+                                    <p class="text-gray-600">Establish permanent community hubs in all three target districts</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">2026 Sustainability</h4>
+                                    <p class="text-gray-600">Achieve 60% self-funding through cultural tourism and e-commerce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-semibold mb-6 text-primary">Join Our Cultural Preservation Movement</h3>
+                <div class="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8 shadow-sm">
+                    <form class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <input type="email" placeholder="Email Address" class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        <button type="submit" class="bg-accent hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Get Involved</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="text-secondary">Urugamba</span> Arts</h3>
+                    <p class="mb-4 text-white text-opacity-80">Preserving Rwandan cultural heritage through digital innovation and community empowerment.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary text-xl"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white text-opacity-80 hover:text-secondary">Home</a></li>
+                        <li><a href="#problem" class="text-white text-opacity-80 hover:text-secondary">The Problem</a></li>
+                        <li><a href="#solution" class="text-white text-opacity-80 hover:text-secondary">Our Solution</a></li>
+                        <li><a href="#prototype" class="text-white text-opacity-80 hover:text-secondary">Prototype</a></li>
+                        <li><a href="#future" class="text-white text-opacity-80 hover:text-secondary">Future Plans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-white text-opacity-80">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-secondary"></i>
+                            <span>Kigali, Rwanda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-secondary"></i>
+                            <span>+250 123 456 789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-secondary"></i>
+                            <span>info@urugambaarts.org</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Newsletter</h4>
+                    <p class="text-white text-opacity-80 mb-4">Subscribe for updates on our preservation efforts.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg w-full text-gray-800 focus:outline-none">
+                        <button type="submit" class="bg-secondary text-gray-800 px-4 py-2 rounded-r-lg font-medium">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-white text-opacity-70">
+                <p>&copy; 2023 Urugamba Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('absolute');
+                mobileMenu.classList.toggle('bg-white');
+                mobileMenu.classList.toggle('w-full');
+                mobileMenu.classList.toggle('left-0');
+                mobileMenu.classList.toggle('px-6');
+                mobileMenu.classList.toggle('py-4');
+                mobileMenu.classList.toggle('shadow-md');
+                mobileMenu.classList.toggle('space-y-4');
+                mobileMenu.classList.toggle('space-x-8');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                            mobileMenu.classList.remove('flex', 'flex-col', 'absolute', 'bg-white', 'w-full', 
+                                'left-0', 'px-6', 'py-4', 'shadow-md', 'space-y-4');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
